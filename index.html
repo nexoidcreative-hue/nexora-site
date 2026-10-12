@@ -128,7 +128,7 @@ document.getElementById('year').textContent=new Date().getFullYear();
 document.getElementById('contactform').addEventListener('submit',function(e){
  e.preventDefault();
  // IMPORTANT: replace this placeholder with your actual business email before publishing.
- const recipient='REPLACE-WITH-YOUR-REAL-EMAIL@example.com';
+ const recipient='nexora.ai.labs@gmail.com';
  if(recipient.includes('REPLACE-WITH-YOUR-REAL-EMAIL')){alert('Before publishing, open index.html and replace the placeholder email address in the contact-form script with your real NEXORA business email.');return;}
  const name=document.getElementById('name').value.trim(), email=document.getElementById('email').value.trim(), service=document.getElementById('service').value, details=document.getElementById('details').value.trim();
  const subject=encodeURIComponent('NEXORA project inquiry — '+service);
