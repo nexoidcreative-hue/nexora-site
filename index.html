@@ -54,6 +54,43 @@ img {
     height: 280px !important;
   }
 }
+/* Premium button hover effects */
+a {
+transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+a:hover {
+transform: translateY(-3px);
+box-shadow: 0 8px 22px rgba(212, 175, 55, 0.25);
+}
+
+/* Smooth entrance animation */
+@keyframes nexAiFadeIn {
+from {
+opacity: 0;
+transform: translateY(18px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+/* Gentle animation for portfolio content */
+iframe {
+animation: nexAiFadeIn 0.8s ease both;
+}
+
+/* Respect visitors who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+*,
+*::before,
+*::after {
+animation-duration: 0.01ms !important;
+transition-duration: 0.01ms !important;
+scroll-behavior: auto !important;
+}
+}
 </style>
   <head>
 <meta charset="utf-8">
